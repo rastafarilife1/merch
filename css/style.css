@@ -719,7 +719,7 @@ h6 {
 }
 
 .no-webp .category::before, .no-webp .category::after{
-  background: url("../img/category/deecor.png") 0/100% no-repeat; }
+  }
 
 .category::before,
 .category::after {
@@ -730,6 +730,7 @@ h6 {
   width: 100%;
   padding-bottom: 12.1%;
   /* 242/2000 */
+  background: url("../img/category/deecor.png") 0/100% no-repeat;
 }
 
 .category::before {
