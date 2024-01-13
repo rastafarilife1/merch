@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240113192935">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__left">
-					<a href="#" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
+					<div class="header__logo"><img src="img/logo.svg" alt="Logo"></div>
 					<div class="header__text">
 						Создаем мерч для компаний и брендов от одежды <br>
 						до сувенирной продукции
@@ -64,17 +64,12 @@
 						Минимальный тираж от 10 шт. Сделаем бесплатный дизайн.
 						Оставьте заявку и получите расчет стоимости!
 					</div>
-					<form action="#" class="hero__form">
-						<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка"
-							placeholder="+7 (999) 999-99-99" class="hero__input">
-						<button type="submit" class="hero__button">Получить расчет</button>
+					<form action="#" data-imask class="hero__form">
+						<input data-required="imask" autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="+7 (999) 999-99-99" class="hero__input">
+						<button type="submit" class="hero__button phone-mask-button">Получить расчет</button>
 					</form>
 				</div>
-				<div class="hero__bg">
-					<picture>
-						<source srcset="img/hero/bg.webp" type="image/webp"><img src="img/hero/bg.jpg" alt="Image">
-					</picture>
-				</div>
+				<div class="hero__bg"><picture><source srcset="img/hero/bg.webp" type="image/webp"><img src="img/hero/bg.jpg" alt="Image"></picture></div>
 			</section>
 			<section class="about">
 				<div class="about__container">
@@ -111,13 +106,8 @@
 								<p>Разрабатываем лекала по вашему запросу, пошьем эталонный образец, отошьем оптовую партию в
 									минимальные сроки.</p>
 							</div>
-							<button class="benefits-item__button button button--shadow"><span>Обсудить</span></button>
-							<div class="benefits-item__icon">
-								<picture>
-									<source srcset="img/benefits/01.webp" type="image/webp"><img src="img/benefits/01.png"
-										alt="Icon">
-								</picture>
-							</div>
+							<button data-popup=".popup-call" class="benefits-item__button button button--shadow"><span>Обсудить</span></button>
+							<div class="benefits-item__icon"><picture><source srcset="img/benefits/01.webp" type="image/webp"><img src="img/benefits/01.png" alt="Icon"></picture></div>
 						</article>
 						<article class="benefits__item benefits-item">
 							<h4 class="benefits-item__title">Гарантия качества по договору </h4>
@@ -125,13 +115,8 @@
 								<p>Вы защищены от брака по договору. При желании вы можете сами приехать на производство и
 									самостоятельно убедиться в качестве пошива.</p>
 							</div>
-							<button class="benefits-item__button button button--shadow"><span>Обсудить</span></button>
-							<div class="benefits-item__icon">
-								<picture>
-									<source srcset="img/benefits/02.webp" type="image/webp"><img src="img/benefits/02.png"
-										alt="Icon">
-								</picture>
-							</div>
+							<button data-popup=".popup-call" class="benefits-item__button button button--shadow"><span>Обсудить</span></button>
+							<div class="benefits-item__icon"><picture><source srcset="img/benefits/02.webp" type="image/webp"><img src="img/benefits/02.png" alt="Icon"></picture></div>
 						</article>
 						<article class="benefits__item benefits-item">
 							<h4 class="benefits-item__title">Тройной уровень контроля качества пошива изделий </h4>
@@ -139,13 +124,8 @@
 								<p>Наш ОТК проверяет качество изделий на каждом технологическом этапе. В случае, если
 									обнаружатся недочеты или брак, мы исправим их за свой счет.</p>
 							</div>
-							<button class="benefits-item__button button button--shadow"><span>Обсудить</span></button>
-							<div class="benefits-item__icon">
-								<picture>
-									<source srcset="img/benefits/03.webp" type="image/webp"><img src="img/benefits/03.png"
-										alt="Icon">
-								</picture>
-							</div>
+							<button data-popup=".popup-call" class="benefits-item__button button button--shadow"><span>Обсудить</span></button>
+							<div class="benefits-item__icon"><picture><source srcset="img/benefits/03.webp" type="image/webp"><img src="img/benefits/03.png" alt="Icon"></picture></div>
 						</article>
 						<article class="benefits__item benefits-item">
 							<h4 class="benefits-item__title">Брендирование под ваш бренд, подготовка для маркетплейсов </h4>
@@ -155,13 +135,8 @@
 									единицы товара и соответствие товара <br>
 									техническому заданию.</p>
 							</div>
-							<button class="benefits-item__button button button--shadow"><span>Обсудить</span></button>
-							<div class="benefits-item__icon">
-								<picture>
-									<source srcset="img/benefits/04.webp" type="image/webp"><img src="img/benefits/04.png"
-										alt="Icon">
-								</picture>
-							</div>
+							<button data-popup=".popup-call" class="benefits-item__button button button--shadow"><span>Обсудить</span></button>
+							<div class="benefits-item__icon"><picture><source srcset="img/benefits/04.webp" type="image/webp"><img src="img/benefits/04.png" alt="Icon"></picture></div>
 						</article>
 						<article class="benefits__item benefits-item">
 							<h4 class="benefits-item__title">
@@ -172,13 +147,8 @@
 								<p>Мы оптимизировали все бизнес процессы на наших фабриках и максимально сократили время от
 									разработки лекал, до пошива партии.</p>
 							</div>
-							<button class="benefits-item__button button button--shadow"><span>Обсудить</span></button>
-							<div class="benefits-item__icon">
-								<picture>
-									<source srcset="img/benefits/05.webp" type="image/webp"><img src="img/benefits/05.png"
-										alt="Icon">
-								</picture>
-							</div>
+							<button data-popup=".popup-call" class="benefits-item__button button button--shadow"><span>Обсудить</span></button>
+							<div class="benefits-item__icon"><picture><source srcset="img/benefits/05.webp" type="image/webp"><img src="img/benefits/05.png" alt="Icon"></picture></div>
 						</article>
 						<article class="benefits__item benefits-item">
 							<h4 class="benefits-item__title">Работаем с материалом Шелк Армани </h4>
@@ -187,13 +157,8 @@
 									производство принимает партии в пошив из Армани Шелка. У нас большой опыт работы с этим
 									материалом.</p>
 							</div>
-							<button class="benefits-item__button button button--shadow"><span>Обсудить</span></button>
-							<div class="benefits-item__icon">
-								<picture>
-									<source srcset="img/benefits/06.webp" type="image/webp"><img src="img/benefits/06.png"
-										alt="Icon">
-								</picture>
-							</div>
+							<button data-popup=".popup-call" class="benefits-item__button button button--shadow"><span>Обсудить</span></button>
+							<div class="benefits-item__icon"><picture><source srcset="img/benefits/06.webp" type="image/webp"><img src="img/benefits/06.png" alt="Icon"></picture></div>
 						</article>
 					</div>
 				</div>
@@ -206,35 +171,24 @@
 					<div class="price__body">
 						<div class="price__items">
 							<div class="price__item price-item">
-								<div class="price-item__icon">
-									<picture>
-										<source srcset="img/price/01.webp" type="image/webp"><img src="img/price/01.png"
-											alt="Icon">
-									</picture>
-								</div>
+								<div class="price-item__icon"><picture><source srcset="img/price/01.webp" type="image/webp"><img src="img/price/01.png" alt="Icon"></picture></div>
 								<div class="price-item__text">Динамическая система скидок в зависимости от объема партии и типа
 									изделия</div>
 							</div>
 							<div class="price__item price-item">
-								<div class="price-item__icon">
-									<picture>
-										<source srcset="img/price/02.webp" type="image/webp"><img src="img/price/02.png"
-											alt="Icon">
-									</picture>
-								</div>
+								<div class="price-item__icon"><picture><source srcset="img/price/02.webp" type="image/webp"><img src="img/price/02.png" alt="Icon"></picture></div>
 								<div class="price-item__text">
 									Пошив одежды у нас - это выгодно!<br>
 									Наценка на наши изделия в рознице - 300% в опте от до 100%
 								</div>
 							</div>
 						</div>
-						<form action="#" class="price__form price-form">
+						<form data-imask action="#" class="price__form price-form">
 							<div class="price-form__label">Заполните форму для расчета стоимости</div>
-							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя"
-								class="price-form__input">
-							<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка"
-								placeholder="+7 (999) 999-99-99" class="price-form__input">
-							<button type="submit" class="price-form__button button">Узнать стоимость партии</button>
+							<input data-required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя" class="price-form__input">
+							<input data-required="imask" autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="+7 (999) 999-99-99" class="price-form__input">
+							<button type="submit" class="price-form__button button phone-mask-button">Узнать стоимость
+								партии</button>
 							<div class="price-form__confedential">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой
 									конфиденциальности</a></div>
 							<div class="price-form__subtitle">Мы свяжемся с вами и рассчитаем стоимость пошива вашей партии
@@ -249,122 +203,75 @@
 					<div class="category__subtitle">Средняя наценка на наши изделия в рознице - 300%, в опте - 100%</div>
 					<div class="category__body">
 						<article class="category__item category-item">
-							<div class="category-item__image">
-								<picture>
-									<source srcset="img/category/01.webp" type="image/webp"><img src="img/category/01.jpg"
-										alt="Image">
-								</picture>
-							</div>
+							<div class="category-item__image"><picture><source srcset="img/category/01.webp" type="image/webp"><img src="img/category/01.jpg" alt="Image"></picture></div>
 							<div class="category-item__content">
 								<h4 class="category-item__title">Футболки</h4>
 								<div class="category-item__price">От 180 руб.</div>
-								<button
-									class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
+								<button data-popup=".popup-call" class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
 							</div>
 						</article>
 						<article class="category__item category-item">
-							<div class="category-item__image">
-								<picture>
-									<source srcset="img/category/02.webp" type="image/webp"><img src="img/category/02.jpg"
-										alt="Image">
-								</picture>
-							</div>
+							<div class="category-item__image"><picture><source srcset="img/category/02.webp" type="image/webp"><img src="img/category/02.jpg" alt="Image"></picture></div>
 							<div class="category-item__content">
 								<h4 class="category-item__title">Худи</h4>
 								<div class="category-item__price">От 500 руб.</div>
-								<button
-									class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
+								<button data-popup=".popup-call" class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
 							</div>
 						</article>
 						<article class="category__item category-item">
-							<div class="category-item__image">
-								<picture>
-									<source srcset="img/category/03.webp" type="image/webp"><img src="img/category/03.jpg"
-										alt="Image">
-								</picture>
-							</div>
+							<div class="category-item__image"><picture><source srcset="img/category/03.webp" type="image/webp"><img src="img/category/03.jpg" alt="Image"></picture></div>
 							<div class="category-item__content">
 								<h4 class="category-item__title">Свитшот</h4>
 								<div class="category-item__price">От 380 руб.</div>
-								<button
-									class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
+								<button data-popup=".popup-call" class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
 							</div>
 						</article>
 						<article class="category__item category-item">
-							<div class="category-item__image">
-								<picture>
-									<source srcset="img/category/04.webp" type="image/webp"><img src="img/category/04.jpg"
-										alt="Image">
-								</picture>
-							</div>
+							<div class="category-item__image"><picture><source srcset="img/category/04.webp" type="image/webp"><img src="img/category/04.jpg" alt="Image"></picture></div>
 							<div class="category-item__content">
 								<h4 class="category-item__title">Толстовки</h4>
 								<div class="category-item__price">От 450 руб.</div>
-								<button
-									class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
+								<button data-popup=".popup-call" class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
 							</div>
 						</article>
 						<article class="category__item category-item">
-							<div class="category-item__image">
-								<picture>
-									<source srcset="img/category/05.webp" type="image/webp"><img src="img/category/05.jpg"
-										alt="Image">
-								</picture>
-							</div>
+							<div class="category-item__image"><picture><source srcset="img/category/05.webp" type="image/webp"><img src="img/category/05.jpg" alt="Image"></picture></div>
 							<div class="category-item__content">
 								<h4 class="category-item__title">Спортивные штаны</h4>
 								<div class="category-item__price">От 350 руб.</div>
-								<button
-									class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
+								<button data-popup=".popup-call" class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
 							</div>
 						</article>
 						<article class="category__item category-item">
-							<div class="category-item__image">
-								<picture>
-									<source srcset="img/category/06.webp" type="image/webp"><img src="img/category/06.jpg"
-										alt="Image">
-								</picture>
-							</div>
+							<div class="category-item__image"><picture><source srcset="img/category/06.webp" type="image/webp"><img src="img/category/06.jpg" alt="Image"></picture></div>
 							<div class="category-item__content">
 								<h4 class="category-item__title">Спортивный костюм</h4>
 								<div class="category-item__price">От 850 руб.</div>
-								<button
-									class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
+								<button data-popup=".popup-call" class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
 							</div>
 						</article>
 						<article class="category__item category-item">
-							<div class="category-item__image">
-								<picture>
-									<source srcset="img/category/07.webp" type="image/webp"><img src="img/category/07.jpg"
-										alt="Image">
-								</picture>
-							</div>
+							<div class="category-item__image"><picture><source srcset="img/category/07.webp" type="image/webp"><img src="img/category/07.jpg" alt="Image"></picture></div>
 							<div class="category-item__content">
 								<h4 class="category-item__title">Платья</h4>
 								<div class="category-item__price">От 500 руб.</div>
-								<button
-									class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
+								<button data-popup=".popup-call" class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
 							</div>
 						</article>
 						<article class="category__item category-item">
-							<div class="category-item__image">
-								<picture>
-									<source srcset="img/category/08.webp" type="image/webp"><img src="img/category/08.jpg"
-										alt="Image">
-								</picture>
-							</div>
+							<div class="category-item__image"><picture><source srcset="img/category/08.webp" type="image/webp"><img src="img/category/08.jpg" alt="Image"></picture></div>
 							<div class="category-item__content">
 								<h4 class="category-item__title">Юбки</h4>
 								<div class="category-item__price">От 300 руб.</div>
-								<button
-									class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
+								<button data-popup=".popup-call" class="category-item__button button button--small button--shadow"><span>Обсудить</span></button>
 							</div>
 						</article>
 					</div>
 					<div class="category__bottom">
 						<div class="category__label">Не нашли своей позиции? Свяжитесь с нами и мы уточним, можем ли пошить
 							нужные вам изделия</div>
-						<button class="category__button button button--shadow"><span>Связаться с нами</span></button>
+						<button data-popup=".popup-call" class="category__button button button--shadow"><span>Связаться с
+								нами</span></button>
 						<a href="#" class="category__link">Что мы не шьем?</a>
 					</div>
 				</div>
@@ -375,12 +282,7 @@
 						подготовкой к продаже</h2>
 					<div class="services__body">
 						<article class="services__item service">
-							<div class="service__image">
-								<picture>
-									<source srcset="img/services/01.webp" type="image/webp"><img src="img/services/01.jpg"
-										alt="	Image">
-								</picture>
-							</div>
+							<div class="service__image"><picture><source srcset="img/services/01.webp" type="image/webp"><img src="img/services/01.jpg" alt="	Image"></picture></div>
 							<h4 class="service__title">Разработка лекал по вашим запросам</h4>
 							<ul class="service__list">
 								<li class="service__item">По фото</li>
@@ -390,12 +292,7 @@
 							</ul>
 						</article>
 						<article class="services__item service">
-							<div class="service__image">
-								<picture>
-									<source srcset="img/services/02.webp" type="image/webp"><img src="img/services/02.jpg"
-										alt="	Image">
-								</picture>
-							</div>
+							<div class="service__image"><picture><source srcset="img/services/02.webp" type="image/webp"><img src="img/services/02.jpg" alt="	Image"></picture></div>
 							<h4 class="service__title">Пошив образца под ваши требования</h4>
 							<ul class="service__list">
 								<li class="service__item">Образец с нуля</li>
@@ -404,12 +301,7 @@
 							</ul>
 						</article>
 						<article class="services__item service">
-							<div class="service__image">
-								<picture>
-									<source srcset="img/services/03.webp" type="image/webp"><img src="img/services/03.jpg"
-										alt="	Image">
-								</picture>
-							</div>
+							<div class="service__image"><picture><source srcset="img/services/03.webp" type="image/webp"><img src="img/services/03.jpg" alt="	Image"></picture></div>
 							<h4 class="service__title">Пошив партий в оговоренные сроки</h4>
 							<ul class="service__list">
 								<li class="service__item">По отработанному образцу<br> (на нашем производстве)</li>
@@ -418,12 +310,7 @@
 							</ul>
 						</article>
 						<article class="services__item service">
-							<div class="service__image">
-								<picture>
-									<source srcset="img/services/04.webp" type="image/webp"><img src="img/services/04.jpg"
-										alt="	Image">
-								</picture>
-							</div>
+							<div class="service__image"><picture><source srcset="img/services/04.webp" type="image/webp"><img src="img/services/04.jpg" alt="	Image"></picture></div>
 							<h4 class="service__title">Брендирование изделий</h4>
 							<ul class="service__list">
 								<li class="service__item">Брендирование изделий</li>
@@ -431,12 +318,7 @@
 							</ul>
 						</article>
 						<article class="services__item service">
-							<div class="service__image">
-								<picture>
-									<source srcset="img/services/05.webp" type="image/webp"><img src="img/services/05.jpg"
-										alt="	Image">
-								</picture>
-							</div>
+							<div class="service__image"><picture><source srcset="img/services/05.webp" type="image/webp"><img src="img/services/05.jpg" alt="	Image"></picture></div>
 							<h4 class="service__title">Сатиновые бирки</h4>
 							<ul class="service__list">
 								<li class="service__item">Нанесение логотипа</li>
@@ -444,12 +326,7 @@
 							</ul>
 						</article>
 						<article class="services__item service">
-							<div class="service__image">
-								<picture>
-									<source srcset="img/services/06.webp" type="image/webp"><img src="img/services/06.jpg"
-										alt="Image">
-								</picture>
-							</div>
+							<div class="service__image"><picture><source srcset="img/services/06.webp" type="image/webp"><img src="img/services/06.jpg" alt="Image"></picture></div>
 							<h4 class="service__title">Подготовка для маркетплейсов</h4>
 							<ul class="service__list">
 								<li class="service__item">Брендирование</li>
@@ -466,16 +343,15 @@
 					<h2 class="price__title title">У нас гибкая система скидок в зависимости от объема партии </h2>
 					<div class="price__subtitle">Оставьте заявку и мы сделаем расчет стоимости и скидки</div>
 					<div class="price__body">
-						<form action="#" class="price__form price-form">
+						<form data-imask action="#" class="price__form price-form">
 							<div class="price-form__label">
 								Заполните форму, мы свяжемся с вами и рассчитаем стоимость пошива
 								вашей партии и скидку на ваш объем
 							</div>
-							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя"
-								class="price-form__input">
-							<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка"
-								placeholder="+7 (999) 999-99-99" class="price-form__input">
-							<button type="submit" class="price-form__button button">Рассчитать скидку</button>
+							<input data-required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя" class="price-form__input">
+							<input data-required="imask" autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="+7 (999) 999-99-99" class="price-form__input">
+							<button type="submit" class="price-form__button button phone-mask-button">Рассчитать
+								скидку</button>
 							<div class="price-form__confedential">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой
 									конфиденциальности</a></div>
 
@@ -491,121 +367,64 @@
 						<article class="gallerys__item gallery">
 							<div class="gallery__thumbs">
 								<div class="gallery__slider1 gallery__slider swiper">
-									<div class="gallery__wrapper swiper-wrapper">
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/01.webp" type="image/webp"><img
-													src="img/gallerys/01/01.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/02.webp" type="image/webp"><img
-													src="img/gallerys/01/02.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/03.webp" type="image/webp"><img
-													src="img/gallerys/01/03.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/04.webp" type="image/webp"><img
-													src="img/gallerys/01/04.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/05.webp" type="image/webp"><img
-													src="img/gallerys/01/05.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/06.webp" type="image/webp"><img
-													src="img/gallerys/01/06.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/07.webp" type="image/webp"><img
-													src="img/gallerys/01/07.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/08.webp" type="image/webp"><img
-													src="img/gallerys/01/08.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/09.webp" type="image/webp"><img
-													src="img/gallerys/01/09.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/10.webp" type="image/webp"><img
-													src="img/gallerys/01/10.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/11.webp" type="image/webp"><img
-													src="img/gallerys/01/11.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/12.webp" type="image/webp"><img
-													src="img/gallerys/01/12.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/13.webp" type="image/webp"><img
-													src="img/gallerys/01/13.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/14.webp" type="image/webp"><img
-													src="img/gallerys/01/14.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/15.webp" type="image/webp"><img
-													src="img/gallerys/01/15.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/16.webp" type="image/webp"><img
-													src="img/gallerys/01/16.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/17.webp" type="image/webp"><img
-													src="img/gallerys/01/17.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/18.webp" type="image/webp"><img
-													src="img/gallerys/01/18.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/19.webp" type="image/webp"><img
-													src="img/gallerys/01/19.jpg" alt="Image">
-											</picture>
-										</div>
+									<div data-gallery class="gallery__wrapper swiper-wrapper">
+										<a href="img/gallerys/01/01.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/01.webp" type="image/webp"><img src="img/gallerys/01/01.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/02.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/02.webp" type="image/webp"><img src="img/gallerys/01/02.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/03.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/03.webp" type="image/webp"><img src="img/gallerys/01/03.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/04.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/04.webp" type="image/webp"><img src="img/gallerys/01/04.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/05.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/05.webp" type="image/webp"><img src="img/gallerys/01/05.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/06.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/06.webp" type="image/webp"><img src="img/gallerys/01/06.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/07.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/07.webp" type="image/webp"><img src="img/gallerys/01/07.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/08.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/08.webp" type="image/webp"><img src="img/gallerys/01/08.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/09.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/09.webp" type="image/webp"><img src="img/gallerys/01/09.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/10.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/10.webp" type="image/webp"><img src="img/gallerys/01/10.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/11.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/11.webp" type="image/webp"><img src="img/gallerys/01/11.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/12.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/12.webp" type="image/webp"><img src="img/gallerys/01/12.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/13.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/13.webp" type="image/webp"><img src="img/gallerys/01/13.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/14.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/14.webp" type="image/webp"><img src="img/gallerys/01/14.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/15.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/15.webp" type="image/webp"><img src="img/gallerys/01/15.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/16.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/16.webp" type="image/webp"><img src="img/gallerys/01/16.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/17.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/17.webp" type="image/webp"><img src="img/gallerys/01/17.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/18.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/18.webp" type="image/webp"><img src="img/gallerys/01/18.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/01/19.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/01/19.webp" type="image/webp"><img src="img/gallerys/01/19.jpg" alt="Image"></picture>
+										</a>
 									</div>
 									<button type="button" class="swiper-button-prev swiper-button-prev1">
 										<img src="img/icons/arrow.svg" alt="Icon">
@@ -617,118 +436,61 @@
 								<div class="mini-gallery__images mini-gallery__images1 swiper">
 									<div class="mini-gallery__wrapper swiper-wrapper">
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/01.webp" type="image/webp"><img
-													src="img/gallerys/01/01.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/01.webp" type="image/webp"><img src="img/gallerys/01/01.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/02.webp" type="image/webp"><img
-													src="img/gallerys/01/02.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/02.webp" type="image/webp"><img src="img/gallerys/01/02.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/03.webp" type="image/webp"><img
-													src="img/gallerys/01/03.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/03.webp" type="image/webp"><img src="img/gallerys/01/03.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/04.webp" type="image/webp"><img
-													src="img/gallerys/01/04.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/04.webp" type="image/webp"><img src="img/gallerys/01/04.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/05.webp" type="image/webp"><img
-													src="img/gallerys/01/05.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/05.webp" type="image/webp"><img src="img/gallerys/01/05.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/06.webp" type="image/webp"><img
-													src="img/gallerys/01/06.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/06.webp" type="image/webp"><img src="img/gallerys/01/06.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/07.webp" type="image/webp"><img
-													src="img/gallerys/01/07.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/07.webp" type="image/webp"><img src="img/gallerys/01/07.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/08.webp" type="image/webp"><img
-													src="img/gallerys/01/08.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/08.webp" type="image/webp"><img src="img/gallerys/01/08.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/09.webp" type="image/webp"><img
-													src="img/gallerys/01/09.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/09.webp" type="image/webp"><img src="img/gallerys/01/09.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/10.webp" type="image/webp"><img
-													src="img/gallerys/01/10.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/10.webp" type="image/webp"><img src="img/gallerys/01/10.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/11.webp" type="image/webp"><img
-													src="img/gallerys/01/11.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/11.webp" type="image/webp"><img src="img/gallerys/01/11.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/12.webp" type="image/webp"><img
-													src="img/gallerys/01/12.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/12.webp" type="image/webp"><img src="img/gallerys/01/12.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/13.webp" type="image/webp"><img
-													src="img/gallerys/01/13.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/13.webp" type="image/webp"><img src="img/gallerys/01/13.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/14.webp" type="image/webp"><img
-													src="img/gallerys/01/14.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/14.webp" type="image/webp"><img src="img/gallerys/01/14.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/15.webp" type="image/webp"><img
-													src="img/gallerys/01/15.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/15.webp" type="image/webp"><img src="img/gallerys/01/15.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/16.webp" type="image/webp"><img
-													src="img/gallerys/01/16.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/16.webp" type="image/webp"><img src="img/gallerys/01/16.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/17.webp" type="image/webp"><img
-													src="img/gallerys/01/17.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/17.webp" type="image/webp"><img src="img/gallerys/01/17.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/18.webp" type="image/webp"><img
-													src="img/gallerys/01/18.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/18.webp" type="image/webp"><img src="img/gallerys/01/18.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/01/19.webp" type="image/webp"><img
-													src="img/gallerys/01/19.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/01/19.webp" type="image/webp"><img src="img/gallerys/01/19.jpg" alt="Image"></picture>
 										</div>
 									</div>
 								</div>
@@ -739,37 +501,25 @@
 									<p>Пошив оптовых партий изделий из трикотажа - толстовки, свитшоты, бриджи, футболки для
 										детей и взрослых</p>
 								</div>
-								<button class="gallery__button button">Обсудить</button>
+								<button data-popup=".popup-call" class="gallery__button button">Обсудить</button>
 							</div>
 						</article>
 						<article class="gallerys__item gallery">
 							<div class="gallery__thumbs">
 								<div class="gallery__slider2 gallery__slider swiper">
-									<div class="gallery__wrapper swiper-wrapper">
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/02/01.webp" type="image/webp"><img
-													src="img/gallerys/02/01.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/02/02.webp" type="image/webp"><img
-													src="img/gallerys/02/02.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/02/03.webp" type="image/webp"><img
-													src="img/gallerys/02/03.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/02/04.webp" type="image/webp"><img
-													src="img/gallerys/02/04.jpg" alt="Image">
-											</picture>
-										</div>
+									<div data-gallery class="gallery__wrapper swiper-wrapper">
+										<a href="img/gallerys/02/01.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/02/01.webp" type="image/webp"><img src="img/gallerys/02/01.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/02/02.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/02/02.webp" type="image/webp"><img src="img/gallerys/02/02.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/02/03.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/02/03.webp" type="image/webp"><img src="img/gallerys/02/03.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/02/04.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/02/04.webp" type="image/webp"><img src="img/gallerys/02/04.jpg" alt="Image"></picture>
+										</a>
 
 									</div>
 									<button type="button" class="swiper-button-prev swiper-button-prev2">
@@ -782,28 +532,16 @@
 								<div class="mini-gallery__images mini-gallery__images2 swiper">
 									<div class="mini-gallery__wrapper swiper-wrapper">
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/02/01.webp" type="image/webp"><img
-													src="img/gallerys/02/01.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/02/01.webp" type="image/webp"><img src="img/gallerys/02/01.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/02/02.webp" type="image/webp"><img
-													src="img/gallerys/02/02.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/02/02.webp" type="image/webp"><img src="img/gallerys/02/02.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/02/03.webp" type="image/webp"><img
-													src="img/gallerys/02/03.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/02/03.webp" type="image/webp"><img src="img/gallerys/02/03.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/02/04.webp" type="image/webp"><img
-													src="img/gallerys/02/04.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/02/04.webp" type="image/webp"><img src="img/gallerys/02/04.jpg" alt="Image"></picture>
 										</div>
 
 									</div>
@@ -815,79 +553,46 @@
 									<p>Пошив оптовой партии платьев по лекалам заказчика. Данные модели отшиваются на постоянной
 										основе.</p>
 								</div>
-								<button class="gallery__button button">Обсудить</button>
+								<button data-popup=".popup-call" class="gallery__button button">Обсудить</button>
 							</div>
 						</article>
 						<article class="gallerys__item gallery">
 							<div class="gallery__thumbs">
 								<div class="gallery__slider3 gallery__slider swiper">
-									<div class="gallery__wrapper swiper-wrapper">
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/01.webp" type="image/webp"><img
-													src="img/gallerys/03/01.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/02.webp" type="image/webp"><img
-													src="img/gallerys/03/02.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/03.webp" type="image/webp"><img
-													src="img/gallerys/03/03.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/04.webp" type="image/webp"><img
-													src="img/gallerys/03/04.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/05.webp" type="image/webp"><img
-													src="img/gallerys/03/05.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/06.webp" type="image/webp"><img
-													src="img/gallerys/03/06.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/07.webp" type="image/webp"><img
-													src="img/gallerys/03/07.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/08.webp" type="image/webp"><img
-													src="img/gallerys/03/08.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/09.webp" type="image/webp"><img
-													src="img/gallerys/03/09.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/10.webp" type="image/webp"><img
-													src="img/gallerys/03/10.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/11.webp" type="image/webp"><img
-													src="img/gallerys/03/11.jpg" alt="Image">
-											</picture>
-										</div>
+									<div data-gallery class="gallery__wrapper swiper-wrapper">
+										<a href="img/gallerys/03/01.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/03/01.webp" type="image/webp"><img src="img/gallerys/03/01.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/03/02.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/03/02.webp" type="image/webp"><img src="img/gallerys/03/02.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/03/03.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/03/03.webp" type="image/webp"><img src="img/gallerys/03/03.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/03/04.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/03/04.webp" type="image/webp"><img src="img/gallerys/03/04.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/03/05.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/03/05.webp" type="image/webp"><img src="img/gallerys/03/05.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/03/06.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/03/06.webp" type="image/webp"><img src="img/gallerys/03/06.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/03/07.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/03/07.webp" type="image/webp"><img src="img/gallerys/03/07.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/03/08.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/03/08.webp" type="image/webp"><img src="img/gallerys/03/08.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/03/09.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/03/09.webp" type="image/webp"><img src="img/gallerys/03/09.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/03/10.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/03/10.webp" type="image/webp"><img src="img/gallerys/03/10.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/03/11.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/03/11.webp" type="image/webp"><img src="img/gallerys/03/11.jpg" alt="Image"></picture>
+										</a>
 
 									</div>
 									<button type="button" class="swiper-button-prev swiper-button-prev3">
@@ -900,70 +605,37 @@
 								<div class="mini-gallery__images mini-gallery__images3 swiper">
 									<div class="mini-gallery__wrapper swiper-wrapper">
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/01.webp" type="image/webp"><img
-													src="img/gallerys/03/01.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/03/01.webp" type="image/webp"><img src="img/gallerys/03/01.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/02.webp" type="image/webp"><img
-													src="img/gallerys/03/02.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/03/02.webp" type="image/webp"><img src="img/gallerys/03/02.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/03.webp" type="image/webp"><img
-													src="img/gallerys/03/03.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/03/03.webp" type="image/webp"><img src="img/gallerys/03/03.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/04.webp" type="image/webp"><img
-													src="img/gallerys/03/04.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/03/04.webp" type="image/webp"><img src="img/gallerys/03/04.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/05.webp" type="image/webp"><img
-													src="img/gallerys/03/05.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/03/05.webp" type="image/webp"><img src="img/gallerys/03/05.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/06.webp" type="image/webp"><img
-													src="img/gallerys/03/06.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/03/06.webp" type="image/webp"><img src="img/gallerys/03/06.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/07.webp" type="image/webp"><img
-													src="img/gallerys/03/07.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/03/07.webp" type="image/webp"><img src="img/gallerys/03/07.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/08.webp" type="image/webp"><img
-													src="img/gallerys/03/08.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/03/08.webp" type="image/webp"><img src="img/gallerys/03/08.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/09.webp" type="image/webp"><img
-													src="img/gallerys/03/09.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/03/09.webp" type="image/webp"><img src="img/gallerys/03/09.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/10.webp" type="image/webp"><img
-													src="img/gallerys/03/10.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/03/10.webp" type="image/webp"><img src="img/gallerys/03/10.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/03/11.webp" type="image/webp"><img
-													src="img/gallerys/03/11.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/03/11.webp" type="image/webp"><img src="img/gallerys/03/11.jpg" alt="Image"></picture>
 										</div>
 
 									</div>
@@ -975,133 +647,73 @@
 									<p>Разработка лекал по эскизу заказчика, пошив эталонного образца, пошив коллекции. Костюмная
 										ткань.</p>
 								</div>
-								<button class="gallery__button button">Обсудить</button>
+								<button data-popup=".popup-call" class="gallery__button button">Обсудить</button>
 							</div>
 						</article>
 						<article class="gallerys__item gallery">
 							<div class="gallery__thumbs">
 								<div class="gallery__slider4 gallery__slider swiper">
-									<div class="gallery__wrapper swiper-wrapper">
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/01.webp" type="image/webp"><img
-													src="img/gallerys/04/01.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/02.webp" type="image/webp"><img
-													src="img/gallerys/04/02.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/03.webp" type="image/webp"><img
-													src="img/gallerys/04/03.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/04.webp" type="image/webp"><img
-													src="img/gallerys/04/04.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/05.webp" type="image/webp"><img
-													src="img/gallerys/04/05.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/06.webp" type="image/webp"><img
-													src="img/gallerys/04/06.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/07.webp" type="image/webp"><img
-													src="img/gallerys/04/07.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/08.webp" type="image/webp"><img
-													src="img/gallerys/04/08.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/09.webp" type="image/webp"><img
-													src="img/gallerys/04/09.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/10.webp" type="image/webp"><img
-													src="img/gallerys/04/10.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/11.webp" type="image/webp"><img
-													src="img/gallerys/04/11.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/12.webp" type="image/webp"><img
-													src="img/gallerys/04/12.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/13.webp" type="image/webp"><img
-													src="img/gallerys/04/13.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/14.webp" type="image/webp"><img
-													src="img/gallerys/04/14.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/15.webp" type="image/webp"><img
-													src="img/gallerys/04/15.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/16.webp" type="image/webp"><img
-													src="img/gallerys/04/16.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/17.webp" type="image/webp"><img
-													src="img/gallerys/04/17.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/18.webp" type="image/webp"><img
-													src="img/gallerys/04/18.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/19.webp" type="image/webp"><img
-													src="img/gallerys/04/19.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/20.webp" type="image/webp"><img
-													src="img/gallerys/04/20.jpg" alt="Image">
-											</picture>
-										</div>
+									<div data-gallery class="gallery__wrapper swiper-wrapper">
+										<a href="img/gallerys/04/01.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/01.webp" type="image/webp"><img src="img/gallerys/04/01.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/02.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/02.webp" type="image/webp"><img src="img/gallerys/04/02.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/03.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/03.webp" type="image/webp"><img src="img/gallerys/04/03.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/04.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/04.webp" type="image/webp"><img src="img/gallerys/04/04.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/05.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/05.webp" type="image/webp"><img src="img/gallerys/04/05.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/06.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/06.webp" type="image/webp"><img src="img/gallerys/04/06.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/07.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/07.webp" type="image/webp"><img src="img/gallerys/04/07.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/08.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/08.webp" type="image/webp"><img src="img/gallerys/04/08.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/09.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/09.webp" type="image/webp"><img src="img/gallerys/04/09.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/10.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/10.webp" type="image/webp"><img src="img/gallerys/04/10.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/11.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/11.webp" type="image/webp"><img src="img/gallerys/04/11.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/12.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/12.webp" type="image/webp"><img src="img/gallerys/04/12.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/13.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/13.webp" type="image/webp"><img src="img/gallerys/04/13.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/14.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/14.webp" type="image/webp"><img src="img/gallerys/04/14.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/15.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/15.webp" type="image/webp"><img src="img/gallerys/04/15.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/16.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/16.webp" type="image/webp"><img src="img/gallerys/04/16.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/17.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/17.webp" type="image/webp"><img src="img/gallerys/04/17.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/18.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/18.webp" type="image/webp"><img src="img/gallerys/04/18.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/19.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/19.webp" type="image/webp"><img src="img/gallerys/04/19.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/04/20.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/04/20.webp" type="image/webp"><img src="img/gallerys/04/20.jpg" alt="Image"></picture>
+										</a>
 									</div>
 									<button type="button" class="swiper-button-prev swiper-button-prev4">
 										<img src="img/icons/arrow.svg" alt="Icon">
@@ -1113,124 +725,64 @@
 								<div class="mini-gallery__images mini-gallery__images4 swiper">
 									<div class="mini-gallery__wrapper swiper-wrapper">
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/01.webp" type="image/webp"><img
-													src="img/gallerys/04/01.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/01.webp" type="image/webp"><img src="img/gallerys/04/01.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/02.webp" type="image/webp"><img
-													src="img/gallerys/04/02.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/02.webp" type="image/webp"><img src="img/gallerys/04/02.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/03.webp" type="image/webp"><img
-													src="img/gallerys/04/03.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/03.webp" type="image/webp"><img src="img/gallerys/04/03.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/04.webp" type="image/webp"><img
-													src="img/gallerys/04/04.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/04.webp" type="image/webp"><img src="img/gallerys/04/04.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/05.webp" type="image/webp"><img
-													src="img/gallerys/04/05.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/05.webp" type="image/webp"><img src="img/gallerys/04/05.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/06.webp" type="image/webp"><img
-													src="img/gallerys/04/06.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/06.webp" type="image/webp"><img src="img/gallerys/04/06.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/07.webp" type="image/webp"><img
-													src="img/gallerys/04/07.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/07.webp" type="image/webp"><img src="img/gallerys/04/07.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/08.webp" type="image/webp"><img
-													src="img/gallerys/04/08.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/08.webp" type="image/webp"><img src="img/gallerys/04/08.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/09.webp" type="image/webp"><img
-													src="img/gallerys/04/09.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/09.webp" type="image/webp"><img src="img/gallerys/04/09.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/10.webp" type="image/webp"><img
-													src="img/gallerys/04/10.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/10.webp" type="image/webp"><img src="img/gallerys/04/10.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/11.webp" type="image/webp"><img
-													src="img/gallerys/04/11.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/11.webp" type="image/webp"><img src="img/gallerys/04/11.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/12.webp" type="image/webp"><img
-													src="img/gallerys/04/12.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/12.webp" type="image/webp"><img src="img/gallerys/04/12.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/13.webp" type="image/webp"><img
-													src="img/gallerys/04/13.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/13.webp" type="image/webp"><img src="img/gallerys/04/13.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/14.webp" type="image/webp"><img
-													src="img/gallerys/04/14.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/14.webp" type="image/webp"><img src="img/gallerys/04/14.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/15.webp" type="image/webp"><img
-													src="img/gallerys/04/15.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/15.webp" type="image/webp"><img src="img/gallerys/04/15.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/16.webp" type="image/webp"><img
-													src="img/gallerys/04/16.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/16.webp" type="image/webp"><img src="img/gallerys/04/16.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/17.webp" type="image/webp"><img
-													src="img/gallerys/04/17.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/17.webp" type="image/webp"><img src="img/gallerys/04/17.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/18.webp" type="image/webp"><img
-													src="img/gallerys/04/18.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/18.webp" type="image/webp"><img src="img/gallerys/04/18.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/19.webp" type="image/webp"><img
-													src="img/gallerys/04/19.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/19.webp" type="image/webp"><img src="img/gallerys/04/19.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/04/20.webp" type="image/webp"><img
-													src="img/gallerys/04/20.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/04/20.webp" type="image/webp"><img src="img/gallerys/04/20.jpg" alt="Image"></picture>
 										</div>
 									</div>
 								</div>
@@ -1241,55 +793,34 @@
 									<p>Разработка лекал по эскизу заказчика, пошив эталонного образца, пошив коллекции. Лён.
 									</p>
 								</div>
-								<button class="gallery__button button">Обсудить</button>
+								<button data-popup=".popup-call" class="gallery__button button">Обсудить</button>
 							</div>
 						</article>
 						<article class="gallerys__item gallery">
 							<div class="gallery__thumbs">
 								<div class="gallery__slider5 gallery__slider swiper">
-									<div class="gallery__wrapper swiper-wrapper">
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/05/01.webp" type="image/webp"><img
-													src="img/gallerys/05/01.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/05/02.webp" type="image/webp"><img
-													src="img/gallerys/05/02.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/05/03.webp" type="image/webp"><img
-													src="img/gallerys/05/03.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/05/04.webp" type="image/webp"><img
-													src="img/gallerys/05/04.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/05/05.webp" type="image/webp"><img
-													src="img/gallerys/05/05.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/05/06.webp" type="image/webp"><img
-													src="img/gallerys/05/06.jpg" alt="Image">
-											</picture>
-										</div>
-										<div class="gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/05/07.webp" type="image/webp"><img
-													src="img/gallerys/05/07.jpg" alt="Image">
-											</picture>
-										</div>
+									<div data-gallery class="gallery__wrapper swiper-wrapper">
+										<a href="img/gallerys/05/01.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/05/01.webp" type="image/webp"><img src="img/gallerys/05/01.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/05/02.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/05/02.webp" type="image/webp"><img src="img/gallerys/05/02.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/05/03.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/05/03.webp" type="image/webp"><img src="img/gallerys/05/03.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/05/04.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/05/04.webp" type="image/webp"><img src="img/gallerys/05/04.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/05/05.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/05/05.webp" type="image/webp"><img src="img/gallerys/05/05.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/05/06.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/05/06.webp" type="image/webp"><img src="img/gallerys/05/06.jpg" alt="Image"></picture>
+										</a>
+										<a href="img/gallerys/05/07.jpg" class="gallery__slide swiper-slide">
+											<picture><source srcset="img/gallerys/05/07.webp" type="image/webp"><img src="img/gallerys/05/07.jpg" alt="Image"></picture>
+										</a>
 
 									</div>
 									<button type="button" class="swiper-button-prev swiper-button-prev5">
@@ -1302,46 +833,25 @@
 								<div class="mini-gallery__images mini-gallery__images5 swiper">
 									<div class="mini-gallery__wrapper swiper-wrapper">
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/05/01.webp" type="image/webp"><img
-													src="img/gallerys/05/01.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/05/01.webp" type="image/webp"><img src="img/gallerys/05/01.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/05/02.webp" type="image/webp"><img
-													src="img/gallerys/05/02.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/05/02.webp" type="image/webp"><img src="img/gallerys/05/02.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/05/03.webp" type="image/webp"><img
-													src="img/gallerys/05/03.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/05/03.webp" type="image/webp"><img src="img/gallerys/05/03.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/05/04.webp" type="image/webp"><img
-													src="img/gallerys/05/04.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/05/04.webp" type="image/webp"><img src="img/gallerys/05/04.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/05/05.webp" type="image/webp"><img
-													src="img/gallerys/05/05.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/05/05.webp" type="image/webp"><img src="img/gallerys/05/05.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/05/06.webp" type="image/webp"><img
-													src="img/gallerys/05/06.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/05/06.webp" type="image/webp"><img src="img/gallerys/05/06.jpg" alt="Image"></picture>
 										</div>
 										<div class="mini-gallery__slide swiper-slide">
-											<picture>
-												<source srcset="img/gallerys/05/07.webp" type="image/webp"><img
-													src="img/gallerys/05/07.jpg" alt="Image">
-											</picture>
+											<picture><source srcset="img/gallerys/05/07.webp" type="image/webp"><img src="img/gallerys/05/07.jpg" alt="Image"></picture>
 										</div>
 
 									</div>
@@ -1353,7 +863,7 @@
 									<p>Разработка лекал по эскизу заказчика, пошив эталонного образца, пошив коллекции. Костюмная
 										ткань.</p>
 								</div>
-								<button class="gallery__button button">Обсудить</button>
+								<button data-popup=".popup-call" class="gallery__button button">Обсудить</button>
 							</div>
 						</article>
 					</div>
@@ -1370,34 +880,23 @@
 					<div class="price__body">
 						<div class="price__items">
 							<div class="price__item price-item">
-								<div class="price-item__icon">
-									<picture>
-										<source srcset="img/price/03.webp" type="image/webp"><img src="img/price/03.png"
-											alt="Icon">
-									</picture>
-								</div>
+								<div class="price-item__icon"><picture><source srcset="img/price/03.webp" type="image/webp"><img src="img/price/03.png" alt="Icon"></picture></div>
 								<div class="price-item__text">Познакомитесь с нашими сотрудниками и руководителем, оцените
 									качество производимой продукции</div>
 							</div>
 							<div class="price__item price-item">
-								<div class="price-item__icon">
-									<picture>
-										<source srcset="img/price/04.webp" type="image/webp"><img src="img/price/04.png"
-											alt="Icon">
-									</picture>
-								</div>
+								<div class="price-item__icon"><picture><source srcset="img/price/04.webp" type="image/webp"><img src="img/price/04.png" alt="Icon"></picture></div>
 								<div class="price-item__text">
 									Обсудите детали сотрудничества, зададите ваши вопросы лично руководителю
 								</div>
 							</div>
 						</div>
-						<form action="#" class="price__form price-form">
+						<form data-imask action="#" class="price__form price-form">
 
-							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя"
-								class="price-form__input">
-							<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка"
-								placeholder="+7 (999) 999-99-99" class="price-form__input">
-							<button type="submit" class="price-form__button button">Узнать стоимость партии</button>
+							<input data-required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя" class="price-form__input">
+							<input data-required="imask" autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="+7 (999) 999-99-99" class="price-form__input">
+							<button type="submit" class="price-form__button button phone-mask-button">Узнать стоимость
+								партии</button>
 							<div class="price-form__confedential">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой
 									конфиденциальности</a></div>
 
@@ -1413,10 +912,7 @@
 							<div class="stages-item__picture">
 								<span>1</span>
 								<div class="stages-item__images">
-									<picture>
-										<source srcset="img/stages/01.webp" type="image/webp"><img src="img/stages/01.jpg"
-											alt="Image">
-									</picture>
+									<picture><source srcset="img/stages/01.webp" type="image/webp"><img src="img/stages/01.jpg" alt="Image"></picture>
 								</div>
 							</div>
 
@@ -1430,10 +926,7 @@
 							<div class="stages-item__picture">
 								<span>2</span>
 								<div class="stages-item__images">
-									<picture>
-										<source srcset="img/stages/02.webp" type="image/webp"><img src="img/stages/02.jpg"
-											alt="Image">
-									</picture>
+									<picture><source srcset="img/stages/02.webp" type="image/webp"><img src="img/stages/02.jpg" alt="Image"></picture>
 								</div>
 							</div>
 
@@ -1450,10 +943,7 @@
 							<div class="stages-item__picture">
 								<span>3</span>
 								<div class="stages-item__images">
-									<picture>
-										<source srcset="img/stages/03.webp" type="image/webp"><img src="img/stages/03.jpg"
-											alt="Image">
-									</picture>
+									<picture><source srcset="img/stages/03.webp" type="image/webp"><img src="img/stages/03.jpg" alt="Image"></picture>
 								</div>
 							</div>
 							<div class="stages-item__content">
@@ -1468,10 +958,7 @@
 							<div class="stages-item__picture">
 								<span>4</span>
 								<div class="stages-item__images">
-									<picture>
-										<source srcset="img/stages/04.webp" type="image/webp"><img src="img/stages/04.jpg"
-											alt="Image">
-									</picture>
+									<picture><source srcset="img/stages/04.webp" type="image/webp"><img src="img/stages/04.jpg" alt="Image"></picture>
 								</div>
 							</div>
 							<div class="stages-item__content">
@@ -1486,10 +973,7 @@
 							<div class="stages-item__picture">
 								<span>5</span>
 								<div class="stages-item__images">
-									<picture>
-										<source srcset="img/stages/05.webp" type="image/webp"><img src="img/stages/05.jpg"
-											alt="Image">
-									</picture>
+									<picture><source srcset="img/stages/05.webp" type="image/webp"><img src="img/stages/05.jpg" alt="Image"></picture>
 								</div>
 							</div>
 							<div class="stages-item__content">
@@ -1504,10 +988,7 @@
 							<div class="stages-item__picture">
 								<span>6</span>
 								<div class="stages-item__images">
-									<picture>
-										<source srcset="img/stages/06.webp" type="image/webp"><img src="img/stages/06.jpg"
-											alt="Image">
-									</picture>
+									<picture><source srcset="img/stages/06.webp" type="image/webp"><img src="img/stages/06.jpg" alt="Image"></picture>
 								</div>
 							</div>
 							<div class="stages-item__content">
@@ -1521,13 +1002,299 @@
 					</div>
 				</div>
 			</section>
+			<section class="reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title title">Отзывы о нашей работе</h2>
+					<div class="reviews__body">
+						<div class="reviews__item reviews-item">
+							<div class="reviews-item__slider swiper">
+								<div class="reviews-item__wrapper swiper-wrapper">
+									<div class="reviews-item__slide swiper-slide">
+										<picture><source srcset="img/reviews/01/01.webp" type="image/webp"><img src="img/reviews/01/01.jpg" alt="Image"></picture>
+									</div>
+									<div class="reviews-item__slide swiper-slide">
+										<picture><source srcset="img/reviews/01/02.webp" type="image/webp"><img src="img/reviews/01/02.jpg" alt="Image"></picture>
+									</div>
+								</div>
+								<button type="button" class="swiper-button-prev reviews-button-prev">
+									<img src="img/icons/arrow.svg" alt="Icon">
+								</button>
+								<button type="button" class="swiper-button-next reviews-button-next">
+									<img src="img/icons/arrow.svg" alt="Icon">
+								</button>
+							</div>
+							<div class="reviews-item__body">
+								<div class="reviews-item__profile">
+									<div class="reviews-item__avatar"><picture><source srcset="img/reviews/01/avatar.webp" type="image/webp"><img src="img/reviews/01/avatar.png" alt="Avatar"></picture></div>
+									<div class="reviews-item__info">
+										<div class="reviews-item__name">Александра Иванова</div>
+										<div class="reviews-item__date">12.12.2022</div>
+									</div>
+								</div>
+								<div class="reviews-item__text">
+									<p>Мы сотрудничаем с этой фабрикой с прошлого года. Продажа продукции данной компании
+										осуществляется без труда. Особенно приятно отметить качество изделий. Скорость доставки
+										грузов также вызывает удовлетворение. Покупатели быстро скупают нашу продукцию и ожидают
+										поступления новых партий.</p>
+								</div>
+								<div class="reviews-item__rating rating">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" class="rating__item" value="1" name="rating">
+											<input type="radio" class="rating__item" value="2" name="rating">
+											<input type="radio" class="rating__item" value="3" name="rating">
+											<input type="radio" class="rating__item" value="4" name="rating">
+											<input type="radio" class="rating__item" value="5" name="rating">
+										</div>
+									</div>
+									<div class="rating__value">5</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__item reviews-item">
+							<div class="reviews-item__slider swiper">
+								<div class="reviews-item__wrapper swiper-wrapper">
+									<div class="reviews-item__slide swiper-slide">
+										<picture><source srcset="img/reviews/02/01.webp" type="image/webp"><img src="img/reviews/02/01.jpg" alt="Image"></picture>
+									</div>
+									<div class="reviews-item__slide swiper-slide">
+										<picture><source srcset="img/reviews/02/02.webp" type="image/webp"><img src="img/reviews/02/02.jpg" alt="Image"></picture>
+									</div>
+								</div>
+								<button type="button" class="swiper-button-prev reviews-button-prev">
+									<img src="img/icons/arrow.svg" alt="Icon">
+								</button>
+								<button type="button" class="swiper-button-next reviews-button-next">
+									<img src="img/icons/arrow.svg" alt="Icon">
+								</button>
+							</div>
+							<div class="reviews-item__body">
+								<div class="reviews-item__profile">
+									<div class="reviews-item__avatar"><picture><source srcset="img/reviews/02/avatar.webp" type="image/webp"><img src="img/reviews/02/avatar.jpg" alt="Avatar"></picture></div>
+									<div class="reviews-item__info">
+										<div class="reviews-item__name">Сергей Герасимович</div>
+										<div class="reviews-item__date">10.01.2023</div>
+									</div>
+								</div>
+								<div class="reviews-item__text">
+									<p>Отзывы о нашей работе
+										Мы сотрудничаем с этой фабрикой с прошлого года. Продажа продукции данной компании
+										осуществляется без труда. Особенно приятно отметить качество изделий. Скорость доставки
+										грузов также вызывает удовлетворение. Покупатели быстро скупают нашу продукцию и ожидают
+										поступления новых партий.Александра Иванова 12.12.2022Больше года сотрудничаю с данной
+										фабрикой, и остаюсь очень довольной. Качество пошива всегда на высшем уровне, и за это я
+										искренне благодарна. Сотрудничество с надежным поставщиком — настоящее удовольствие, и я
+										ценю возможность работать с профессионалами.</p>
+								</div>
+								<div class="reviews-item__rating rating">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" class="rating__item" value="1" name="rating">
+											<input type="radio" class="rating__item" value="2" name="rating">
+											<input type="radio" class="rating__item" value="3" name="rating">
+											<input type="radio" class="rating__item" value="4" name="rating">
+											<input type="radio" class="rating__item" value="5" name="rating">
+										</div>
+									</div>
+									<div class="rating__value">3.6</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__item reviews-item">
+							<div class="reviews-item__slider swiper">
+								<div class="reviews-item__wrapper swiper-wrapper">
+									<div class="reviews-item__slide swiper-slide">
+										<picture><source srcset="img/reviews/03/01.webp" type="image/webp"><img src="img/reviews/03/01.jpg" alt="Image"></picture>
+									</div>
+									<div class="reviews-item__slide swiper-slide">
+										<picture><source srcset="img/reviews/03/02.webp" type="image/webp"><img src="img/reviews/03/02.jpg" alt="Image"></picture>
+									</div>
+									<div class="reviews-item__slide swiper-slide">
+										<picture><source srcset="img/reviews/03/03.webp" type="image/webp"><img src="img/reviews/03/03.jpg" alt="Image"></picture>
+									</div>
+								</div>
+								<button type="button" class="swiper-button-prev reviews-button-prev">
+									<img src="img/icons/arrow.svg" alt="Icon">
+								</button>
+								<button type="button" class="swiper-button-next reviews-button-next">
+									<img src="img/icons/arrow.svg" alt="Icon">
+								</button>
+							</div>
+							<div class="reviews-item__body">
+								<div class="reviews-item__profile">
+									<div class="reviews-item__avatar"><picture><source srcset="img/reviews/03/avatar.webp" type="image/webp"><img src="img/reviews/03/avatar.jpg" alt="Avatar"></picture></div>
+									<div class="reviews-item__info">
+										<div class="reviews-item__name">Михаил Слепцов</div>
+										<div class="reviews-item__date">02.11.2022</div>
+									</div>
+								</div>
+								<div class="reviews-item__text">
+									<p>Сделали заказ на большую партию топов. Партия была сдана в оговоренный срок. Хочу особо
+										отметить работу менеджеров, которые терпеливо помогали нам выбрать подходящие ткани и
+										несколько раз отправляли образцы. Такая готовность сотрудничать встречается далеко не
+										везде. Я с удовольствием порекомендую эту компанию своим знакомым!</p>
+								</div>
+								<div class="reviews-item__rating rating">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" class="rating__item" value="1" name="rating">
+											<input type="radio" class="rating__item" value="2" name="rating">
+											<input type="radio" class="rating__item" value="3" name="rating">
+											<input type="radio" class="rating__item" value="4" name="rating">
+											<input type="radio" class="rating__item" value="5" name="rating">
+										</div>
+									</div>
+									<div class="rating__value">4</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__item reviews-item">
+							<div class="reviews-item__slider swiper">
+								<div class="reviews-item__wrapper swiper-wrapper">
+									<div class="reviews-item__slide swiper-slide">
+										<picture><source srcset="img/reviews/04/01.webp" type="image/webp"><img src="img/reviews/04/01.jpg" alt="Image"></picture>
+									</div>
+									<div class="reviews-item__slide swiper-slide">
+										<picture><source srcset="img/reviews/04/02.webp" type="image/webp"><img src="img/reviews/04/02.jpg" alt="Image"></picture>
+									</div>
+								</div>
+								<button type="button" class="swiper-button-prev reviews-button-prev">
+									<img src="img/icons/arrow.svg" alt="Icon">
+								</button>
+								<button type="button" class="swiper-button-next reviews-button-next">
+									<img src="img/icons/arrow.svg" alt="Icon">
+								</button>
+							</div>
+							<div class="reviews-item__body">
+								<div class="reviews-item__profile">
+									<div class="reviews-item__avatar"><picture><source srcset="img/reviews/04/avatar.webp" type="image/webp"><img src="img/reviews/04/avatar.jpg" alt="Avatar"></picture></div>
+									<div class="reviews-item__info">
+										<div class="reviews-item__name">Марина Кисленко</div>
+										<div class="reviews-item__date">01.02.2023</div>
+									</div>
+								</div>
+								<div class="reviews-item__text">
+									<p>Это одно из немногих швейных производств, где работает действительно
+										профессиональная команда. Когда я обратился с идеей по пошиву футболок и спортивных
+										костюмов, они не только помогли мне ее развить, но и разработали дизайн,
+										экспериментировали и достигли желаемого результата точно в срок.</p>
+								</div>
+								<div class="reviews-item__rating rating">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" class="rating__item" value="1" name="rating">
+											<input type="radio" class="rating__item" value="2" name="rating">
+											<input type="radio" class="rating__item" value="3" name="rating">
+											<input type="radio" class="rating__item" value="4" name="rating">
+											<input type="radio" class="rating__item" value="5" name="rating">
+										</div>
+									</div>
+									<div class="rating__value">3</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="question">
+				<div class="question__container">
+					<h2 class="question__title title">Ответы на частые вопросы</h2>
+					<div data-spollers class="question__spollers spollers">
+						<details class="spollers__item">
+							<summary class="spollers__title"><span>Где находится ваше производство?</span></summary>
+							<div class="spollers__body">
+								<p>
+									Наши производства находятся в Москве и Узбекистане, в планах открытие производства в
+									Киргизии. Если вы находитесь в Москве, вы можете приехать к нам в производственный цех и
+									оценить качество работы лично.
+								</p>
+								<p>Также мы можем вам организовать экскурсию на фабрику в Узбекистане.</p>
+							</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title"><span>С каким ассортиментом одежды вы работаете?</span></summary>
+							<div class="spollers__body">
+								<p>
+									Мы производим широкий ассортимент изделий: женская одежда из текстиля, одежду из трикотажа,
+									толстовки, худи, футболки; униформу для ваших сотрудников, корпоративную одежду и многое
+									другое
+								</p>
+							</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title"><span>Какие мощности Вашего производства?</span></summary>
+							<div class="spollers__body">
+								<p>
+									Мощность при полной загрузке до 80 000 ед./мес.
+								</p>
+							</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title"><span>Какие сроки изготовления?</span></summary>
+							<div class="spollers__body">
+								<p>
+									Сроки изготовления к каждому заказу рассчитываются индивидуально, все зависит от объёма
+									работ. При необходимости выполняем срочные заказы.
+								</p>
+							</div>
+						</details>
+					</div>
+				</div>
+			</section>
 		</main>
+		<div id="popup" aria-hidden="true" class="popup popup-call">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"><span></span></button>
+					<div class="popup-call__title">Введите ваши контактные данные</div>
+					<div class="popup-call__subtitle">Мы свяжемся с вами для обсуждения деталей</div>
+					<form data-imask action="#" class="popup-call__form">
+						<input data-required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ведите ваше имя" class="popup-call__input">
+						<input data-required="imask" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="+7 (999) 999-99-99" class="popup-call__input">
+						<button type="submit" class="popup-call__button button button--shadow phone-mask-button"><span>Заказать
+								обратный
+								звонок</span></button>
+					</form>
+					<div class="popup-call__confedential">
+						Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+		</div>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__info footer-info">
+						<div class="footer-info__logo"><picture><source srcset="img/logo-footer.webp" type="image/webp"><img src="img/logo-footer.png" alt="Logo"></picture></div>
+						<div class="footer-info__text">Ведущий производитель<br> одежды в России и СНГ</div>
+					</div>
+					<div class="footer__address footer-address">
+						<div class="footer-address__icon"><picture><source srcset="img/icons/location.webp" type="image/webp"><img src="img/icons/location.png" alt="Icon"></picture></div>
+						<div class="footer-address__text">Москва, ул. Большая Серпуховская 46, ст.34, офис12</div>
+					</div>
+					<div class="footer__contacts footer-contacts">
+						<div class="footer-contacts__social">
+							<a href="#" class="footer-contacts__whatsapp"><img src="img/icons/whatsapp.svg" alt="Icon"></a>
+							<a href="#" class="footer-contacts__telegram"><img src="img/icons/telegram.svg" alt="Icon"></a>
+						</div>
+						<div class="footer-contacts__links">
+							<a href="+79300359492" class="footer-contacts__tel">+7 (930) 035-94-92</a>
+							<a href="mailto:a.petrichuk@euroasian.group" class="footer-contacts__email">a.petrichuk@euroasian.group</a>
+						</div>
+					</div>
+				</div>
+				<button data-popup=".popup-call" type="submit" class="footer__button button button--shadow"><span>Заказать
+						обратный
+						звонок</span></button>
+				<a href="" class="footer__confedential">Политика конфиденциальности</a>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240112224014"></script>
+	<script src="js/app.min.js?_v=20240113192935"></script>
 </body>
 
 </html>
